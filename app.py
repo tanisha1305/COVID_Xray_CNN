@@ -44,26 +44,26 @@ if uploaded_file is not None:
     img_array = np.array(img) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
 
-    # # Prediction
+    # Prediction
     prediction = model.predict(img_array)[0][0]
     
-if prediction < 0.5:
-    label = "COVID"
-    confidence = (1 - prediction) * 100
-else:
-    label = "Normal"
-    confidence = prediction * 100
+    if prediction < 0.5:
+        label = "COVID"
+        confidence = (1 - prediction) * 100
+    else:
+        label = "Normal"
+        confidence = prediction * 100
 
-st.markdown(
-    f"""
-    <div style="margin-top:15px;">
-        <p style="font-size:18px; font-weight:600;">
-            Prediction: <span style="font-weight:700;">{label}</span>
-        </p>
-        <p style="font-size:16px; color:#cfcfcf;">
-            Confidence: <span style="font-weight:700;">{confidence:.2f}%</span>
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+    st.markdown(
+        f"""
+        <div style="margin-top:15px;">
+            <p style="font-size:18px; font-weight:600;">
+                Prediction: <span style="font-weight:700;">{label}</span>
+            </p>
+            <p style="font-size:16px; color:#cfcfcf;">
+                Confidence: <span style="font-weight:700;">{confidence:.2f}%</span>
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
