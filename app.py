@@ -46,18 +46,7 @@ if uploaded_file is not None:
 
     # # Prediction
     prediction = model.predict(img_array)[0][0]
-
-    # if prediction < 0.5:
-    #     label = "COVID"
-    #     confidence = (1 - prediction) * 100
-    #     st.write("Prediction: COVID")
-    # else:
-    #     label = "Normal"
-    #     confidence = prediction * 100
-    #     st.write("Prediction: Normal")
-
-    # st.write(f"Confidence: {confidence:.2f}%")
-
+    
 if prediction < 0.5:
     label = "COVID"
     confidence = (1 - prediction) * 100
