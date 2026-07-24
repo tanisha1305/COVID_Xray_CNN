@@ -1,4 +1,3 @@
-```md
 # COVID_Xray_CNN
 
 A deep learning-based medical image classification project that detects **COVID-19** from chest X-ray images using Convolutional Neural Networks (CNN). The model is trained to classify X-ray scans, demonstrating how artificial intelligence can assist healthcare professionals in the early screening and diagnosis process.
@@ -44,7 +43,7 @@ A deep learning-based medical image classification project that detects **COVID-
 - Scikit-learn
 
 **Development Environment**
-- Jupyter Notebook / Google Colab
+- Google Colab
 
 ---
 
@@ -103,4 +102,3 @@ GitHub: https://github.com/tanisha1305
 
 LinkedIn: https://linkedin.com/in/tanisha-karande
 
-```
