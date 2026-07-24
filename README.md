@@ -103,7 +103,4 @@ GitHub: https://github.com/tanisha1305
 
 LinkedIn: https://linkedin.com/in/tanisha-karande
 
----
-
-If you found this project interesting, feel free to star the repository!
 ```
